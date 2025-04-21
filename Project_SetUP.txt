@@ -1,0 +1,7 @@
+-create databases for guitar customer & transactions 
+-customer->id(serial)PK,name, email, password , phonenumber
+-transactions->transaction_id(serial)PK,productname,customer_id,cur_date,del_date,address
+
+-Add database information on server file 
+-in terminal -> nodemon index.js(nodemon and node should be already setup)
+- server is on , go to localhost:3000
