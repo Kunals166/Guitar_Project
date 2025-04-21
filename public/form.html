@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Window</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cfc5c5;
+            color: white;
+        }
+        
+        .form-container {
+            width: 90%;
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-item {
+            margin-bottom: 15px;
+        }
+
+        .form-item h2 {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .form-input input,
+        .form-input select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(113, 234, 113);
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        h2{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class='nav-bar'>
+            
+            <input type='checkbox' id='check' />
+            <span class="menu">
+              <a href="index.html" class="nav_item" >
+                <li >Home</li>
+            </a>
+            <a href="form.html" class="nav_item" style="color: aqua;">                
+                <li >Form</li>
+            </a>
+            <a href="contact.html" class="nav_item" >
+                <li >Contact & Details  </li>
+            </a>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav>
+
+    <div class="form-container">
+        <h1>Account Registration</h1>
+        <form action="/register" method="POST">
+            <div class="form-item">
+                <h2>Name:</h2>
+                <div class="form-input">
+                    <label for="name"></label>            
+                    <input type="text" placeholder="Enter your Name" name="name" required>
+                </div>
+            </div>
+
+            <div class="form-item">
+                <h2>Email Id:</h2>
+                <div class="form-input">
+                    <label for="email"></label>            
+                    <input type="email" placeholder="Enter your Email Address" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-item">
+                <h2>Password:</h2>
+                <div class="form-input">
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password"  required>
+                </div>
+            </div>
+
+            <div class="form-item">
+                <h2>Phone Number:</h2>
+                <div class="form-input">
+                    <label for="phone"></label>
+                    <input type="tel" id="phone" name="phone" placeholder="1234567890" pattern="[0-9]{10}" required>
+                </div>
+            </div>
+
+
+
+
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div><h3>If Already Exists <a href="login_page.html">Login</a></h3></div>
+        <div><h3>To see previous Orders<a href="show.html">Click Here</a></h3></div>
+    </div>
+</body>
+</html>

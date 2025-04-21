@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        .container {
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+          padding: 20px;
+          flex-wrap: nowrap;
+        }
+      
+        .h_card {
+          flex: 1;
+          max-width: 30%;
+          background: #ffffff;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease;
+        }
+      
+        .h_card:hover {
+          transform: translateY(-5px);
+        }
+      
+        .h_card img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+      
+        .h_container {
+          padding: 15px;
+          text-align: center;
+        }
+      
+        .h_container h3 {
+          margin: 10px 0 5px;
+          font-size: 1.2rem;
+          color: #1e1e1e;
+        }
+      
+        .h_container p {
+          font-size: 0.95rem;
+          color: #555;
+          margin-bottom: 15px;
+        }
+      
+        .h_container button {
+          padding: 10px 20px;
+          background-color: #1e1e1e;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      
+        .h_container button a {
+          color: white;
+          text-decoration: none;
+        }
+        .card{display: flex; align-items: center;justify-content: space-around; width: 80%;margin: 40px auto;color: #1e1e1e;font-family: 'Courier New', Courier, monospace;}
+        .f_img{
+          height: 300px;
+          border-radius: 15%;
+        }
+      </style>
+    
+</head>
+<body>
+  <nav>
+    <ul class='nav-bar'>
+        
+        <input type='checkbox' id='check' />
+        <span class="menu">
+          <a href="index.html" class="nav_item" style="color: aqua;">
+            <li >Home</li>
+        </a>
+        <a href="form.html" class="nav_item">                
+            <li >Form</li>
+        </a>
+        <a href="contact.html" class="nav_item" >
+            <li >Contact & Details  </li>
+        </a>
+            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+        </span>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </ul>
+</nav>
+<br>
+<h2 style="color: #1e1e1e;">A Hobby for your every Mood </h2>
+
+    <div class="container">
+
+        <div class="h_card">
+            <img src="Acoustic.webp" alt="Acoustic Guitar">
+            <div class="h_container">
+                <p>Perfect for those moments when silence is too loud and only strings can carry your feelings.</p>
+                <button><a href="#acoustic">Explore</a></button>
+            </div>
+        </div>
+
+        <div class="h_card">
+            <img src="rock-concert.webp" alt="Bass Guitar">
+            <div class="h_container">
+                <p> For the fearless — the ones who don't just play music, they ignite it.</p>
+                <button><a href="#electric">Explore</a></button>
+            </div>
+        </div>
+
+        <div class="h_card">
+            <img src="classical.avif" alt="classical Guitar">
+            <div class="h_container">
+                <p> For the soul that finds power in stillness and poetry in precision.</p>
+                <button><a href="#classical">Explore</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card" id="acoustic">
+      <img src="Acoustic_feedback.jpg" alt="classical Guitar" class="f_img">
+      <div class="h_container">
+          <h2 > <strong><i>"There’s a quiet kind of truth in every strum — no noise, just soul. If you’re drawn to the raw, the real, the deeply human, follow it. Sometimes the simplest sound carries the heaviest emotion."</i></strong></h2>
+      </div>
+    </div>
+
+    <div class="card"  id="electric">
+      <img src="Electric.avif" alt="classical Guitar" class="f_img">
+      <div class="h_container">
+          <h2 > <strong><i>"There’s power in finding something that speaks louder than words. Every bend, every note, it’s a release — raw, real, and unapologetically you. If you feel that spark, don’t hold back. Let it become your voice."</i></strong></h2>
+      </div>
+  </div>
+
+
+
+
+
+<div class="card"  id="classical">
+  <img src="classical_feedback.jpg" alt="classical Guitar" class="f_img">
+  <div class="h_container">
+      <h2 > <strong><i>"There’s a timeless grace in the touch of classical strings. Every note is a story, every chord a whisper from the past. If you feel the pull, embrace it. In the silence between the notes, you’ll find a deeper connection."</i></strong></h2>
+  </div>
+</div>
+
+    <footer style="border-top: 1px solid #1e1e1e;margin-top: 1%;">
+      <div style="padding: 2vw z10vw; margin: 0 auto;background-color: grey;color: white;" id="Contact">
+        <br>
+        <h2 style="color: #1e1e1e;">Contact</h2>
+          <ul style="color: #1e1e1e;" >
+              <li>Email: Guitars@cyan.com</li>
+              <li>Discord: cyan&Guitars</li>
+              <li>Locations:Pune,Maharastra</li>
+          </ul>
+      </div>
+  </footer>
+</body>
+</html>

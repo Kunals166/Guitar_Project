@@ -1,0 +1,248 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  --color1: #6e8f65 ;
+  --color2:rgb(25, 23, 23);
+}
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: var(--color2);
+  padding: 20px 20px;
+}
+
+
+.logo img {width: 40px;}
+.menu {display: flex;}
+.menu li {padding-left: 30px;}
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color1);
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color1);
+  transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+  position: absolute;
+  color: var(--color1);
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+nav {
+  background-color: black;
+  padding: 15px 0;
+  text-align: left;
+}
+
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  padding: 10px 20px;
+  transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+  color: grey;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #cfc5c5;
+  color: white;
+}
+
+
+
+.nav-bar {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  padding: 10px 20px;
+  transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+  color: grey;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.h_card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+
+.h_card img {
+  width: 40%;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.h_container {
+  width: 55%;
+}
+
+.h_card h3 {
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.h_card button {
+  padding: 10px 15px;
+  background-color: aqua;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.h_card button a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+    .car-card {
+      display: flex;
+      max-width: 800px;
+      padding: 16px;
+      align-items: center;
+    }
+
+    .car-image {
+      flex: 1;
+      max-width: 300px;
+      margin-right: 20px;
+    }
+
+    .car-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .car-details {
+      flex: 2;
+    }
+
+    .car-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .car-description {
+      font-size: 1rem;
+      color: #333;
+    }
+@media (max-width: 610px) {
+  .h_card {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .h_card img {
+      width: 80%;
+      margin: 0 auto 15px;
+  }
+}
+#check {display: none;}
+@media(max-width: 610px){
+  .h_card{
+    height: 400px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .menu {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 100;
+      background-color: var(--color2);
+      transition: all 0.2s ease-in-out;
+  }
+  .menu li {margin-top: 40px;}
+  .menu li a {padding: 10px;}
+  .open-menu , .close-menu {display: block;}
+  #check:checked ~ .menu {right: 0;}
+  
+}
+@media (max-width: 973px) {
+  
+}
