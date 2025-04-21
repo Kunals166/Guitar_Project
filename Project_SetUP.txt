@@ -3,5 +3,6 @@
 -transactions->transaction_id(serial)PK,productname,customer_id,cur_date,del_date,address
 
 -Add database information on server file 
+-install all npm packages used->(npm i)
 -in terminal -> nodemon index.js(nodemon and node should be already setup)
 - server is on , go to localhost:3000
