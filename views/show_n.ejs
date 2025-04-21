@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Orders</title>
+  <style>
+    body { font-family: Arial; }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">Your Orders</h1>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Product</th>
+      <th>Order Date</th>
+      <th>Delivery Date</th>
+      <th>Status</th>
+      <th>Address</th>
+
+    </tr>
+    <% transactions.forEach((t) => { %>
+      <tr>
+        <td><%= t.customer_id %></td>
+        <td><%= t.productname %></td>
+        <td><%= new Date(t.cur_date).toLocaleDateString() %></td>
+        <td><%= new Date(t.del_date).toLocaleDateString() %></td>
+        <% const isDelivered = new Date() > new Date(t.del_date); %>
+        <td><%= isDelivered ? "Delivered" : "Pending" %></td>
+        <td><%= t.address %></td>
+        </tr>
+    <% }) %>
+  </table>
+  <a href="index.html" style="position: absolute; right: 10%;margin-top: 3%;">Exit</a>
+</body>
+</html>
